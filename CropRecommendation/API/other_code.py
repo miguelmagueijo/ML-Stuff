@@ -6,7 +6,7 @@ def messageWithSecondsFrom(start: float, msg: str) -> str:
     return f"{msg}: {round(time.time() - start, 4)}s"
 
 
-rf_model_file = open("../rf_model.pkl", "rb")
+rf_model_file = open("CropRecommendation/rf_model.pkl", "rb")
 
 start = time.time()
 rfc_model = pickle.load(rf_model_file)
